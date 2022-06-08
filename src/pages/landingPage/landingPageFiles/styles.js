@@ -16,3 +16,7 @@ export const StyledLink = styled(Link)`
   font-size: 1.25rem;
   color: black;
 `;
+
+export const StyledH1 = styled.h1`
+  font-weight: 900;
+`;

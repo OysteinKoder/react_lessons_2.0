@@ -1,9 +1,9 @@
 import { StyledHeader } from "../../../components/headerStyles/styles";
-import { StyledLink, StyledNav } from "./styles";
+import { StyledH1, StyledLink, StyledNav } from "./styles";
 const Header = () => {
   return (
     <StyledHeader>
-      <h1>React Lessons 2.0</h1>
+      <StyledH1>React Lessons 2.0</StyledH1>
       <StyledNav>
         <StyledLink to="/about-us">About Us Page</StyledLink>
         <StyledLink to="/cat-facts">Cat Facts Page</StyledLink>
