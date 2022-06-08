@@ -10,6 +10,7 @@ const Header = () => {
         <StyledLink to="/pante-person-selector">
           Pante Person Selector
         </StyledLink>
+        <StyledLink to="/student-projects">student projects</StyledLink>
       </StyledNav>
     </StyledHeader>
   );
