@@ -9,16 +9,22 @@ export const StyledNav = styled.nav`
 `;
 
 export const StyledLink = styled(Link)`
-  border: solid white 0.75em;
-  border-radius: 15px;
+  border: #61dbfb solid 1px;
+  border-radius: 10px;
   padding: 0.5em;
   text-decoration: none;
-  font-size: 1.25rem;
-  color: black;
+  font-size: 1rem;
+  color: #61dbfb;
+
+  transition: 0.1s linear;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 export const StyledH1 = styled.h1`
   font-weight: 900;
+  color: #61dbfb;
 `;
 
 export const LayerWrapper = styled.div``;

@@ -1,7 +1,7 @@
 export const spiderWebBackground = {
   fullscreen: {
     enable: true,
-    zIndex: -10,
+    zIndex: -1,
   },
   fpsLimit: 120,
   interactivity: {
@@ -38,7 +38,7 @@ export const spiderWebBackground = {
       width: 1,
     },
     collisions: {
-      enable: true,
+      enable: false,
     },
     move: {
       direction: "none",
