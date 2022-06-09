@@ -6,10 +6,12 @@ import ReactLogo from "../components/ReactLogo";
 import Header from "./landingPage/landingPageFiles/Header";
 import { LayerWrapper } from "./landingPage/landingPageFiles/styles";
 import Background from "../components/BackgroundParticles";
+import BackgroundParticles from "../components/BackgroundParticles";
 
 const LandingPage = () => {
   return (
     <>
+      <BackgroundParticles />
       <Header />
       <Routes>
         <Route path="*" element={<ReactLogo />} />

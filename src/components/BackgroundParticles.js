@@ -20,6 +20,10 @@ const BackgroundParticles = () => {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
+        fullscreen: {
+          enable: true,
+          zIndex: -10,
+        },
         background: {
           color: {
             value: "#282c34",
@@ -43,14 +47,14 @@ const BackgroundParticles = () => {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 150,
               duration: 0.4,
             },
           },
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#47bbed",
           },
           links: {
             color: "#ffffff",
@@ -91,6 +95,7 @@ const BackgroundParticles = () => {
         },
         detectRetina: true,
       }}
+      style={{ zIndex: "-10 !important" }}
     />
   );
 };
