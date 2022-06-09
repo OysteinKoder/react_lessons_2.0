@@ -4,6 +4,8 @@ import CatFactPage from "./landingPage/CatFactsPage";
 import PantePersonSelectorPage from "./landingPage/PantePersonSelectorPage";
 import ReactLogo from "../components/ReactLogo";
 import Header from "./landingPage/landingPageFiles/Header";
+import { LayerWrapper } from "./landingPage/landingPageFiles/styles";
+import Background from "../components/BackgroundParticles";
 
 const LandingPage = () => {
   return (

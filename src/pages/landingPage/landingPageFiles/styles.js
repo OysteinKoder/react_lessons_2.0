@@ -20,3 +20,7 @@ export const StyledLink = styled(Link)`
 export const StyledH1 = styled.h1`
   font-weight: 900;
 `;
+
+export const LayerWrapper = styled.div`
+  z-index: -2;
+`;
