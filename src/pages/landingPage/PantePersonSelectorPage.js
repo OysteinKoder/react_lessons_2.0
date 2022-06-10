@@ -1,6 +1,7 @@
 import { StyledMain } from "../../components/styles";
 import { people } from "./panteRoulette/peopleConst";
 import { useEffect, useState } from "react";
+import { StyledButton } from "../../components/Button";
 
 const PantePersonSelectorPage = () => {
   const [person, setPerson] = useState("Winner is....");
@@ -22,7 +23,7 @@ const PantePersonSelectorPage = () => {
       <article>
         <p>Panteperson:</p>
         <p>{person}</p>
-        <button onClick={selectRandomPerson}>select person</button>
+        <StyledButton onClick={selectRandomPerson}>Roll Dice</StyledButton>
       </article>
     </StyledMain>
   );
