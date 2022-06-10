@@ -13,11 +13,9 @@ const Header = () => {
         <ReactLogo />
       </StyledRow>
       <StyledNav>
-        <StyledLink to="/about-us">About Us Page</StyledLink>
-        <StyledLink to="/cat-facts">Cat Facts Page</StyledLink>
-        <StyledLink to="/pante-person-selector">
-          Pante Person Selector
-        </StyledLink>
+        <StyledLink to="/about-us">About Us</StyledLink>
+        <StyledLink to="/cat-facts">Cat Facts</StyledLink>
+        <StyledLink to="/pante-person-selector">Pante roullete</StyledLink>
       </StyledNav>
     </StyledHeader>
   );

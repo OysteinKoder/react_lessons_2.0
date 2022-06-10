@@ -5,11 +5,17 @@ body {
   font-weight: 500;
 }
 
-p {
-  color: #61dbfb;
+h1 {
+  text-shadow: 0 0 1px #61dbfb, 0 0 1px #61dbfb, 0 0 1px #61dbfb,
+    0 0 1px #61dbfb, 0 0 1px #61dbfb, 0 0 1px #61dbfb, 0 0 1px #61dbfb,
+    0 0 1px #61dbfb;
+  letter-spacing: 1px;
 }
 
 h2 {
+  color: #61dbfb;
+}
+p {
   color: #61dbfb;
 }
 
@@ -21,12 +27,6 @@ h2 {
 .App-logo {
   height: 20vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {

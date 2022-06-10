@@ -9,7 +9,10 @@ export const StyledHeader = styled.header`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(5px);
-  border-bottom: #61dbfb solid 1px;
+  border-bottom: #61dbfb solid 3px;
+
+  box-shadow: 0 0 1px #61dbfb, 0 0 1px #61dbfb, 0 0 1px #61dbfb, 0 0 2px #61dbfb,
+    0 0 1px #61dbfb, 0 0 1px #61dbfb, 0 0 2px #61dbfb, 0 0 2px #61dbfb;
 `;
 
 export const StyledRow = styled.div`
