@@ -24,7 +24,7 @@ const CatFactPage = () => {
   }, []);
   return (
     <StyledMain>
-      <h2>Cat Fact Page</h2>
+      <h2>React Hooks, useState/useEffect</h2>
       <article>
         <p>This Cat has: {catLives} lives left</p>
         <StyledButton onClick={addLives}>Add life</StyledButton>
