@@ -4,5 +4,17 @@ export const StyledHeader = styled.header`
   margin: 0 auto;
   padding: 1rem;
   background-color: #47bbed;
-  border-bottom: solid white 0.5em;
+
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(5px);
+  border-bottom: #61dbfb solid 1px;
+`;
+
+export const StyledRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
 `;

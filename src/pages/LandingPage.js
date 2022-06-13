@@ -5,10 +5,12 @@ import PantePersonSelectorPage from "./landingPage/PantePersonSelectorPage";
 import StudentProjectsPage from "./landingPage/StudentProjectsPage";
 import ReactLogo from "../components/ReactLogo";
 import Header from "./landingPage/landingPageFiles/Header";
+import BackgroundParticles from "../components/BackgroundParticles";
 
 const LandingPage = () => {
   return (
     <>
+      <BackgroundParticles />
       <Header />
       <Routes>
         <Route path="*" element={<ReactLogo />} />

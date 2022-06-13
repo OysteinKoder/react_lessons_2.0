@@ -4,6 +4,15 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
+
+p {
+  color: #61dbfb;
+}
+
+h2 {
+  color: #61dbfb;
+}
+
 .App {
   text-align: center;
   margin: 0 auto;
