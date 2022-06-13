@@ -5,12 +5,15 @@ import { useState } from "react";
 
 const CatFactPage = () => {
   const [data, setData] = useState();
+  const [apiError, setApiError] = useState();
   const getCatData = () => {
-    axios.get("https://catfact.ninja/facts").then((res) => {
-      setData(res.data.data);
-    });
+    axios
+      .get("https://catfact.ninja/facts")
+      .then((res) => {
+        setData(res.data.data);
+      })
+      .catch(setApiError(true));
   };
-  console.log(data);
   useEffect(() => {
     getCatData();
   }, []);
@@ -26,8 +29,24 @@ const CatFactPage = () => {
         </article>
       </StyledMain>
     );
+  } else if (apiError) {
+    return (
+      <StyledMain>
+        <h2>Cat Fact Page</h2>
+        <article>
+          <p>Content failed to load, please try again</p>
+        </article>
+      </StyledMain>
+    );
   } else {
-    return <div>loading</div>;
+    return (
+      <StyledMain>
+        <h2>Cat Fact Page</h2>
+        <article>
+          <p>The content is loading</p>
+        </article>
+      </StyledMain>
+    );
   }
 };
 
