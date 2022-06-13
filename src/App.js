@@ -1,11 +1,14 @@
 import "./App.css";
 import LandingPage from "./pages/LandingPage";
+import { Provider as ReduxProvider } from "react-redux";
 
 function App() {
   return (
-    <div className="App">
-      <LandingPage />
-    </div>
+    <ReduxProvider>
+      <div className="App">
+        <LandingPage />
+      </div>
+    </ReduxProvider>
   );
 }
 
