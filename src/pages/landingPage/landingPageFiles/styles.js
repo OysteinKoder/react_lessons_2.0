@@ -6,6 +6,9 @@ export const StyledNav = styled.nav`
   display: flex;
   justify-content: space-evenly;
   margin: auto;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const StyledLink = styled(Link)`

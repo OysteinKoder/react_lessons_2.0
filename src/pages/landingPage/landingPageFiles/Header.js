@@ -13,12 +13,10 @@ const Header = () => {
         <ReactLogo />
       </StyledRow>
       <StyledNav>
-        <StyledLink to="/about-us">About Us Page</StyledLink>
-        <StyledLink to="/cat-facts">Cat Facts Page</StyledLink>
-        <StyledLink to="/pante-person-selector">
-          Pante Person Selector
-        </StyledLink>
-        <StyledLink to="/student-projects">student projects</StyledLink>
+        <StyledLink to="/about-us">About</StyledLink>
+        <StyledLink to="/cat-facts">Cat Api</StyledLink>
+        <StyledLink to="/pante-person-selector">Panting</StyledLink>
+        <StyledLink to="/student-projects">Projects</StyledLink>
       </StyledNav>
     </StyledHeader>
   );
