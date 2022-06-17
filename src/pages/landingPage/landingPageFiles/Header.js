@@ -16,7 +16,7 @@ const Header = () => {
         <StyledLink to="/about-us">About</StyledLink>
         <StyledLink to="/cat-facts">Cat Api</StyledLink>
         <StyledLink to="/pante-person-selector">Panting</StyledLink>
-        <StyledLink to="/student-projects">Projects</StyledLink>
+        <StyledLink to="/props">Props</StyledLink>
       </StyledNav>
     </StyledHeader>
   );

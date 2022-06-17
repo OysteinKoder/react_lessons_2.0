@@ -2,7 +2,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import AboutUsPage from "./landingPage/AboutUsPage";
 import CatFactPage from "./landingPage/CatFactsPage";
 import PantePersonSelectorPage from "./landingPage/PantePersonSelectorPage";
-import StudentProjectsPage from "./landingPage/StudentProjectsPage";
+import PropsExample from "./landingPage/StudentProjectsPage";
 import ReactLogo from "../components/ReactLogo";
 import Header from "./landingPage/landingPageFiles/Header";
 import BackgroundParticles from "../components/BackgroundParticles";
@@ -20,7 +20,17 @@ const LandingPage = () => {
           path="/pante-person-selector"
           element={<PantePersonSelectorPage />}
         />
-        <Route path="/student-projects" element={<StudentProjectsPage />} />
+        <Route
+          path="/props"
+          element={
+            <PropsExample
+              text="dette er text"
+              headline="dette er overskrift"
+              num1={2}
+              num2={3}
+            />
+          }
+        />
       </Routes>
     </>
   );

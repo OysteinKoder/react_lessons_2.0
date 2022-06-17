@@ -1,14 +1,16 @@
 import { StyledMain } from "../../components/styles";
 
-const StudentProjectsPage = () => {
+const PropsExample = (props) => {
+  const { headline, text, num1, num2 } = props;
+  console.log(num1 + num2);
   return (
     <StyledMain>
-      <h2>Student Projects</h2>
+      <h2>{headline}</h2>
       <article>
-        <p>Student projects are to be filled inn here</p>
+        <p>{text}</p>
       </article>
     </StyledMain>
   );
 };
 
-export default StudentProjectsPage;
+export default PropsExample;
