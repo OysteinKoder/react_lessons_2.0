@@ -6,6 +6,7 @@ import StudentProjectsPage from "./landingPage/StudentProjectsPage";
 import ReactLogo from "../components/ReactLogo";
 import Header from "./landingPage/landingPageFiles/Header";
 import BackgroundParticles from "../components/BackgroundParticles";
+import ReduxCounterPage from "./landingPage/ReduxCounterPage";
 
 const LandingPage = () => {
   return (
@@ -16,6 +17,7 @@ const LandingPage = () => {
         <Route path="*" element={<ReactLogo />} />
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/cat-facts" element={<CatFactPage />} />
+        <Route path="/redux-counter" element={<ReduxCounterPage />} />
         <Route
           path="/pante-person-selector"
           element={<PantePersonSelectorPage />}

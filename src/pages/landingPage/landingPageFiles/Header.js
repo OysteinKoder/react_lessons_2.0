@@ -17,6 +17,7 @@ const Header = () => {
         <StyledLink to="/cat-facts">React Hooks</StyledLink>
         <StyledLink to="/pante-person-selector">Panting</StyledLink>
         <StyledLink to="/student-projects">Projects</StyledLink>
+        <StyledLink to="/redux-counter">Redux Counter</StyledLink>
       </StyledNav>
     </StyledHeader>
   );
