@@ -2,26 +2,12 @@ import { StyledButton, StyledMain } from "../../components/styles";
 import { useEffect, useState } from "react";
 
 const CatFactPage = () => {
-  const [catLives, setCatLives] = useState(9);
-
-  const addLives = () => {
-    setCatLives(catLives + 1);
-  };
-
-  const removeCatLives = () => {
-    setCatLives(catLives - 1);
-  };
-
-  const example = () => {
-    setTimeout(() => {
-      setCatLives(catLives + 1);
-    }, 1500);
-  };
 
   useEffect(() => {
     example();
     // eslint-disable-next-line
   }, []);
+
   return (
     <StyledMain>
       <h2>React Hooks, useState/useEffect</h2>
@@ -32,6 +18,37 @@ const CatFactPage = () => {
       </article>
     </StyledMain>
   );
+
+  if (data) {
+    return (
+      <StyledMain>
+        <h2>Cat Fact Page</h2>
+        <article>
+          {data.map((item, idx) => {
+            return <p key={idx}>{item.fact}</p>;
+          })}
+        </article>
+      </StyledMain>
+    );
+  } else if (apiError) {
+    return (
+      <StyledMain>
+        <h2>Cat Fact Page</h2>
+        <article>
+          <p>Content failed to load, please try again</p>
+        </article>
+      </StyledMain>
+    );
+  } else {
+    return (
+      <StyledMain>
+        <h2>Cat Fact Page</h2>
+        <article>
+          <p>The content is loading</p>
+        </article>
+      </StyledMain>
+    );
+  }
 };
 
 export default CatFactPage;
