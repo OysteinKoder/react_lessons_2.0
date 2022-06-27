@@ -11,7 +11,7 @@ const ReduxCounterPage = () => {
   return (
     <div>
       <StyledButton onClick={increaseCount}>add</StyledButton>
-      <h1>{counter}</h1>
+      <p>{counter}</p>
       <StyledButton onClick={decreaseCount}>subtract</StyledButton>
     </div>
   );
