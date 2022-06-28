@@ -13,3 +13,19 @@ export const StyledMain = styled.main`
   -webkit-backdrop-filter: blur(5px);
   border: #61dbfb solid 1px;
 `;
+
+export const StyledButton = styled.button`
+  border: #61dbfb solid 1px;
+  border-radius: 10px;
+  padding: 0.5em;
+  margin: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #61dbfb;
+  background: transparent;
+
+  transition: 0.1s linear;
+  &:hover {
+    transform: scale(1.2);
+  }
+`;

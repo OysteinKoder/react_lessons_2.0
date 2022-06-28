@@ -1,53 +1,33 @@
-import { StyledMain } from "../../components/styles";
-import axios from "axios";
-import { useEffect } from "react";
-import { useState } from "react";
+import { StyledButton, StyledMain } from "../../components/styles";
+import { useEffect, useState } from "react";
 
 const CatFactPage = () => {
-  const [data, setData] = useState();
-  const [apiError, setApiError] = useState();
-  const getCatData = () => {
-    axios
-      .get("https://catfact.ninja/facts")
-      .then((res) => {
-        setData(res.data.data);
-      })
-      .catch(setApiError(true));
-  };
-  useEffect(() => {
-    getCatData();
-  }, []);
+  const [catLives, setCatLives] = useState(9);
 
-  if (data) {
-    return (
-      <StyledMain>
-        <h2>Cat Fact Page</h2>
-        <article>
-          {data.map((item, idx) => {
-            return <p key={idx}>{item.fact}</p>;
-          })}
-        </article>
-      </StyledMain>
-    );
-  } else if (apiError) {
-    return (
-      <StyledMain>
-        <h2>Cat Fact Page</h2>
-        <article>
-          <p>Content failed to load, please try again</p>
-        </article>
-      </StyledMain>
-    );
-  } else {
-    return (
-      <StyledMain>
-        <h2>Cat Fact Page</h2>
-        <article>
-          <p>The content is loading</p>
-        </article>
-      </StyledMain>
-    );
-  }
+  const addLives = () => setCatLives(catLives + 1);
+  const removeLives = () => setCatLives(catLives - 1);
+
+  useEffect(() => {
+    setTimeout(addLives, 1000);
+  });
+  return (
+    <StyledMain>
+      <h2>React Hooks, useState/useEffect</h2>
+      <article>
+        <p>This Cat has: {catLives} lives left</p>
+        <StyledButton onClick={addLives}>Add life</StyledButton>
+        <StyledButton onClick={removeLives}>Remove life</StyledButton>
+      </article>
+    </StyledMain>
+  );
+  return (
+    <StyledMain>
+      <h2>Cat Fact Page</h2>
+      <article>
+        <p>Cat lives : {catLives}</p>
+      </article>
+    </StyledMain>
+  );
 };
 
 export default CatFactPage;
