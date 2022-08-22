@@ -5,16 +5,16 @@ const CatFactPage = () => {
   const [catLives, setCatLives] = useState(9);
 
   const addLives = () => {
-    setCatLives(catLives + 1);
+    setCatLives((catLives) => catLives + 1);
   };
 
   const removeCatLives = () => {
-    setCatLives(catLives - 1);
+    setCatLives((catLives) => catLives - 1);
   };
 
   const example = () => {
     setTimeout(() => {
-      setCatLives(catLives + 1);
+      setCatLives((catLives) => catLives + 1);
     }, 1500);
   };
 
