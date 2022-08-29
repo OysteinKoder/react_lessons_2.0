@@ -9,13 +9,13 @@ const CounterContextPage = () => {
   // global by wrapping a provider around your app.js
   const { count, setCount } = useContext(CounterContext);
 
-  // increases the count
-  const increase = () => {
-    setCount((count) => count + 1);
-  };
   // decreases the count
   const decrease = () => {
     setCount((count) => count - 1);
+  };
+  // increases the count
+  const increase = () => {
+    setCount((count) => count + 1);
   };
   return (
     <>

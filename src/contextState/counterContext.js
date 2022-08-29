@@ -2,9 +2,10 @@ import { createContext } from "react";
 
 // Here we define a new Context.
 // This can be wrapped around children to provide a state to all children:
-// <CounterContext.Provider>
+// The state will be stored in the value prop
+// <CounterContext.Provider value={} >
 //  <App/>
-// <CounterContext.Provider value={}/>
+// <CounterContext.Provider />
 
 // The value is whatever state you want to make available throughout
 // the children.
