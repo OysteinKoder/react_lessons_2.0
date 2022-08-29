@@ -10,6 +10,7 @@ const CatFactPage = () => {
     axios
       .get("https://catfact.ninja/facts")
       .then((res) => {
+        console.log(res);
         setData(res.data.data);
       })
       .catch(setApiError(true));
