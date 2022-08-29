@@ -1,12 +1,12 @@
 import { Routes, Route, Link } from "react-router-dom";
-import AboutUsPage from "./landingPage/AboutUsPage";
+import ContextUsedPage from "./landingPage/ContextUsedPage";
 import CatFactPage from "./landingPage/CatFactsPage";
 import PantePersonSelectorPage from "./landingPage/PantePersonSelectorPage";
 import StudentProjectsPage from "./landingPage/StudentProjectsPage";
 import ReactLogo from "../components/ReactLogo";
 import Header from "./landingPage/landingPageFiles/Header";
 import BackgroundParticles from "../components/BackgroundParticles";
-import ReduxCounterPage from "./landingPage/ReduxCounterPage";
+import CounterContextPage from "./landingPage/CounterContext";
 
 const LandingPage = () => {
   return (
@@ -15,14 +15,14 @@ const LandingPage = () => {
       <Header />
       <Routes>
         <Route path="*" element={<ReactLogo />} />
-        <Route path="/about-us" element={<AboutUsPage />} />
+        <Route path="/Context-Used" element={<ContextUsedPage />} />
         <Route path="/cat-facts" element={<CatFactPage />} />
-        <Route path="/redux-counter" element={<ReduxCounterPage />} />
         <Route
           path="/pante-person-selector"
           element={<PantePersonSelectorPage />}
         />
         <Route path="/student-projects" element={<StudentProjectsPage />} />
+        <Route path="/context-counter" element={<CounterContextPage />} />
       </Routes>
     </>
   );

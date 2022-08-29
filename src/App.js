@@ -1,15 +1,20 @@
 import "./App.css";
 import LandingPage from "./pages/LandingPage";
-import { Provider as ReduxProvider } from "react-redux";
-import store from "./redux/store";
+import { CounterContext } from "./contextState/counterContext";
+import { useState } from "react";
 
 function App() {
+  // This is the state we choose to use as a global value,
+  // We do this by passing it into the value of
+  // CounterContext.Provider
+  // Therefore making it available in the whole app
+  const [count, setCount] = useState(0);
   return (
-    <ReduxProvider store={store}>
-      <div className="App">
+    <div className="App">
+      <CounterContext.Provider value={{ count, setCount }}>
         <LandingPage />
-      </div>
-    </ReduxProvider>
+      </CounterContext.Provider>
+    </div>
   );
 }
 
