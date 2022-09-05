@@ -1,17 +1,17 @@
-import { textAndContent } from "../textAndContent/textAndContent";
+import { TEXT_AND_CONTENT } from "../textAndContent/textAndContent";
 
 const TextExamplePage = () => {
-  const { seaVehiclesPage } = textAndContent;
-  const { motorBoat, jetSki } = textAndContent.seaVehiclesPage;
+  const { SEA_VEHICLES_PAGE } = TEXT_AND_CONTENT;
+  const { MOTOR_BOAT, JET_SKI } = TEXT_AND_CONTENT.SEA_VEHICLES_PAGE;
   return (
     <>
-      <h1>{seaVehiclesPage.headline}</h1>
-      <h2>{motorBoat.headline}</h2>
-      <p>{motorBoat.text}</p>
-      <img src={motorBoat.image} />
-      <h2>{jetSki.headline}</h2>
-      <p>{jetSki.text}</p>
-      <img src={jetSki.image} />
+      <h1>{SEA_VEHICLES_PAGE.HEADLINE}</h1>
+      <h2>{MOTOR_BOAT.HEADLINE}</h2>
+      <p>{MOTOR_BOAT.TEXT}</p>
+      <img src={MOTOR_BOAT.IMAGE} />
+      <h2>{JET_SKI.HEADLINE}</h2>
+      <p>{JET_SKI.TEXT}</p>
+      <img src={JET_SKI.IMAGE} />
     </>
   );
 };
