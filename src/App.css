@@ -13,6 +13,10 @@ h2 {
   color: #61dbfb;
 }
 
+li {
+  text-align: left;
+}
+
 .App {
   text-align: center;
   margin: 0 auto;
