@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import AboutUsPage from "./landingPage/AboutUsPage";
 import CatFactPage from "./landingPage/CatFactsPage";
 import PantePersonSelectorPage from "./landingPage/PantePersonSelectorPage";
@@ -18,10 +18,7 @@ const LandingPage = () => {
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/cat-facts" element={<CatFactPage />} />
         <Route path="/redux-counter" element={<ReduxCounterPage />} />
-        <Route
-          path="/pante-person-selector"
-          element={<PantePersonSelectorPage />}
-        />
+        <Route path="/pante-person-selector" element={<PantePersonSelectorPage />} />
         <Route path="/student-projects" element={<StudentProjectsPage />} />
       </Routes>
     </>

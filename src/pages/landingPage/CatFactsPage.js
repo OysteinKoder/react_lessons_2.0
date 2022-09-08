@@ -20,14 +20,6 @@ const CatFactPage = () => {
       </article>
     </StyledMain>
   );
-  return (
-    <StyledMain>
-      <h2>Cat Fact Page</h2>
-      <article>
-        <p>Cat lives : {catLives}</p>
-      </article>
-    </StyledMain>
-  );
 };
 
 export default CatFactPage;
