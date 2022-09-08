@@ -26,7 +26,7 @@ const PantePersonSelectorPage = () => {
 
   return (
     <StyledMain>
-      <PanteSelectorTitle>Pante sdelasadasector</PanteSelectorTitle>
+      <PanteSelectorTitle>Pante selector</PanteSelectorTitle>
       <article>
         <RandomPerson className={newName && "fade"}>
           {pantePerson ? pantePerson : "No more people to select from"}
