@@ -11,7 +11,7 @@ const PantePersonSelectorPage = () => {
     "Emil",
     "Margrethe",
     "Stian",
-    "Emil",
+    "Øystein",
   ]);
 
   function handleclick() {
@@ -22,7 +22,6 @@ const PantePersonSelectorPage = () => {
     console.log(vinner);
     let vinInd = pantePersonList.indexOf(vinner);
     pantePersonList.splice(vinInd, 1);
-    setPantePersonList(pantePersonList);
     let vinner2 =
       pantePersonList[Math.floor(Math.random() * pantePersonList.length)];
     setPantePerson2(vinner2);
@@ -33,9 +32,6 @@ const PantePersonSelectorPage = () => {
     console.log(vinInd);
     console.log(vinInd2);
   }
-  pantePersonList.map((item, idx) => {
-    return <li>{pantePersonList.item}</li>;
-  });
 
   return (
     <StyledMain>
@@ -45,7 +41,15 @@ const PantePersonSelectorPage = () => {
         <button onClick={handleclick}>Velg PantePerson</button>
         <p>{pantePerson}</p>
         <p>{pantePerson2}</p>
-        <ul>{pantePersonList}</ul>
+
+        <p>Liste over eligible Pantepersoner</p>
+        <ul>
+          {pantePersonList.map((x, idx) => (
+            <li>
+              {idx}. {x}
+            </li>
+          ))}
+        </ul>
       </article>
     </StyledMain>
   );
