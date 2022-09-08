@@ -1,3 +1,4 @@
+import RandomName from "../../components/randomizer";
 import { StyledMain } from "../../components/styles";
 
 const PantePersonSelectorPage = () => {
@@ -5,7 +6,7 @@ const PantePersonSelectorPage = () => {
     <StyledMain>
       <h2>Pante Selector</h2>
       <article>
-        <p>this is the pante selector page</p>
+        <RandomName />
       </article>
     </StyledMain>
   );
