@@ -52,3 +52,18 @@ h2 {
     transform: rotate(360deg);
   }
 }
+
+.fade {
+  animation: fader 7s cubic-bezier(0.78, -0.01, 1, -0.16);
+}
+
+@keyframes fader {
+  from {
+    opacity: 0;
+    transform: opacity;
+  }
+  to {
+    opacity: 100;
+    transform: opacity;
+  }
+}

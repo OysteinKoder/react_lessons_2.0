@@ -21,7 +21,7 @@ const PantePersonSelectorPage = () => {
 
     setTimeout(() => {
       setNewName(false);
-    }, 10500);
+    }, 7000);
   };
 
   return (
