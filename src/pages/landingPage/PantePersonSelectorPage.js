@@ -38,6 +38,10 @@ const PantePersonSelectorPage = () => {
     setPantePersonList(pantePersonList);
   }
 
+  const removeItem = (index) => {
+    setPantePersonList(pantePersonList.filter((o, i) => index !== i));
+  };
+
   return (
     <StyledMain>
       <h2>Pante Selector</h2>
@@ -59,7 +63,7 @@ const PantePersonSelectorPage = () => {
         <ul>
           {pantePersonList.map((x, idx) => (
             <li>
-              {idx}. {x}
+              {idx}. {x} <button onClick={() => removeItem(idx)}>Remove</button>
             </li>
           ))}
         </ul>
