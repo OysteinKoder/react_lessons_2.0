@@ -15,7 +15,14 @@ export const FadingIn = styled.h2`
   }
 `;
 
-const names = ["Øystein", "Øystein1", "Øystein2", "Øystein3", "Øystein 4"];
+// TODO: move persons into seperate data file
+const bergenA = ["Mads N", "Rasmus", "Ingrid", "Mia", "Vetle", "Orion", "Suganthi", "Bettina", "Iben", "Remi"];
+const bergenB = ["Christian", "Erlend", "Julie", "Sailaja", "Steffen", "Thomas"];
+const bergenC = [ "Cathrine V", "Nisitha", "Simon", "Vivvian", "Bjørn Andre", "Marcus", "Marius", "Monica", "Nikolai"];
+const bergenD = ["Andreas T", "Markus M", "Sondre F"];
+const bergenE = ["Michael H", "Ketil"];
+const bergenS = ["Øyvind", "Margrethe Sofie", "Ram", "Andreas O", "Christian SB", "James D", "Kenneth L", "Knut C", "Morthen", "Sander", "Sondre H", "Stian T"];
+const names = bergenA.concat(bergenB, bergenC, bergenD, bergenE, bergenS);
 
 function RandomName() {
   const [name, newName] = useState("Show first victim");
