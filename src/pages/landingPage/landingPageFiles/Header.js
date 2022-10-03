@@ -12,12 +12,6 @@ const Header = () => {
         <StyledH1>React Lessons 2.0</StyledH1>
         <ReactLogo />
       </StyledRow>
-      <StyledNav>
-        <StyledLink to="/about-us">About</StyledLink>
-        <StyledLink to="/cat-facts">Cat Api</StyledLink>
-        <StyledLink to="/pante-person-selector">Panting</StyledLink>
-        <StyledLink to="/student-projects">Projects</StyledLink>
-      </StyledNav>
     </StyledHeader>
   );
 };
