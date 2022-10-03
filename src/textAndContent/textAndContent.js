@@ -1,6 +1,7 @@
 import motorBoat from "../images/motorBoat.jpg";
 import jetSki from "../images/jetSki.jpg";
 
+// Contains the text used on the sea vehicles page, stored as object with objects inside.
 export const TEXT_AND_CONTENT = {
   SEA_VEHICLES_PAGE: {
     HEADLINE: "Sea Vehicles",

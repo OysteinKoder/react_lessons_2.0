@@ -1,6 +1,7 @@
 import { TEXT_AND_CONTENT } from "../textAndContent/textAndContent";
 
 const TextExamplePage = () => {
+  // deconstructs the TEXT_AND_CONTENT
   const { SEA_VEHICLES_PAGE } = TEXT_AND_CONTENT;
   const { MOTOR_BOAT, JET_SKI } = TEXT_AND_CONTENT.SEA_VEHICLES_PAGE;
   return (
