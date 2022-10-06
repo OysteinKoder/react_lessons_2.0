@@ -1,9 +1,10 @@
-import Header from "../components/Header";
+import { Headline, Button } from "../components/spesificExportExamples";
+import BLADIBLADIBLA from "../components/DefaultExportExample";
 
 const LandingPage = () => {
   return (
     <>
-      <Header />
+      <BLADIBLADIBLA />
     </>
   );
 };
