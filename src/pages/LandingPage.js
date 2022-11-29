@@ -1,6 +1,6 @@
 // default imports
-import Button from "../components/Button";
-import Paragraph from "../components/Paragraph";
+import DefaultParagraph from "../components/DefaultParagraph";
+import DefaultButton from "../components/DefaultButton";
 
 // specific imports
 import {
@@ -14,10 +14,10 @@ const LandingPage = () => {
       <header>
         <h1>React lessons</h1>
       </header>
-      <Button />
-      <Paragraph />
+      <DefaultParagraph />
       <SpecificParagraphOne />
       <SpecificParagraphTwo />
+      <DefaultButton />
       <footer>
         <p>contact info:</p>
       </footer>

@@ -1,5 +1,5 @@
 // This is an example of a default export
-const Paragraph = () => {
+const DefaultParagraph = () => {
   return (
     <>
       <p>Default paragraph</p>
@@ -7,4 +7,4 @@ const Paragraph = () => {
   );
 };
 
-export default Paragraph;
+export default DefaultParagraph;
