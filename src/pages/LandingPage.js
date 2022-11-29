@@ -11,10 +11,16 @@ import {
 const LandingPage = () => {
   return (
     <>
+      <header>
+        <h1>React lessons</h1>
+      </header>
       <Button />
       <Paragraph />
       <SpecificParagraphOne />
       <SpecificParagraphTwo />
+      <footer>
+        <p>contact info:</p>
+      </footer>
     </>
   );
 };
