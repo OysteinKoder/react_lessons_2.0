@@ -1,10 +1,20 @@
-import { Headline, Button } from "../components/spesificExportExamples";
-import BLADIBLADIBLA from "../components/DefaultExportExample";
+// default imports
+import Button from "../components/Button";
+import Paragraph from "../components/Paragraph";
+
+// specific imports
+import {
+  SpecificParagraphOne,
+  SpecificParagraphTwo,
+} from "../components/SpecificExports";
 
 const LandingPage = () => {
   return (
     <>
-      <BLADIBLADIBLA />
+      <Button />
+      <Paragraph />
+      <SpecificParagraphOne />
+      <SpecificParagraphTwo />
     </>
   );
 };
