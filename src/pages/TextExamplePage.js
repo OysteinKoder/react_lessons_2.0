@@ -1,4 +1,4 @@
-import { TEXT_AND_CONTENT } from "../textAndContent/textAndContent";
+import { TEXT_AND_CONTENT } from "../language/textAndContent";
 
 const TextExamplePage = () => {
   // deconstructs the TEXT_AND_CONTENT
